@@ -95,6 +95,7 @@ if menu == "Analyze":
                 st.markdown(f"**Usia:** {res.get('age_range')}")
                 st.markdown(f"**Pengalaman:** {res.get('experience_range')}")
                 st.markdown("**Standar Kompetensi:**")
+                st.markdown("**Key Performace Indicators:**")
                 for c in res.get("competencies", []):
                     st.markdown(f"- **{c.get('name')}** — {c.get('definition')}")
                 # Create temp PDF and offer download
